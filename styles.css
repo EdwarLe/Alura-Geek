@@ -99,4 +99,173 @@ h1, p{
     font-size: 16px;
 }
 
+/* Galería de productos */
 
+.container-products {
+    display: grid;
+    grid-template-columns: 10.5% 1fr 10.5%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.container-products__all__products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-products__line:first-child {
+    grid-area: 1 / 2;
+
+}
+
+.container-products__line:nth-child(0n+2) {
+    grid-area: 2 / 2;
+}
+
+.container-products__line:last-child {
+    grid-area: 3 / 2;
+}
+
+.container-products__line {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.container-products__line__header > h3{
+    color: #464646;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.container-products__line__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-products__line__header__ver-todo > a {
+    color: #2A7AE4;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.container-products__line__header__ver-todo {
+    display: flex;
+    align-items: center;
+}
+
+.container-products__line__products__product__text {
+    font-weight: 500;
+    font-size: 14px;
+    color: #464646;
+    margin: 5px 0;
+}
+
+.container-products__line__products__product__price {
+    font-weight: 700;
+    font-size: 16px;
+    color: #464646;
+    margin: 5px 0;
+}
+
+.container-products__line__products__product__ver-producto {
+    font-weight: 700;
+    font-size: 16px;
+    color: #2A7AE4;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+/* Rodapie */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__info {
+    display: grid;
+    grid-template-columns: 10.5% 1fr 10.5%;
+    background-color: #EAF2FD;
+    margin-top: 60px;
+}
+
+
+.logo__footer {
+    display: flex;
+    height: 31px;
+    width: 190px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info__contenido {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 64px 0;
+}
+
+.footer__info__contenido__list {
+    margin-top: 0;
+    width: 200px;
+    list-style: none;
+}
+
+.footer__info__contenido__list-ind {
+    
+    color: #464646;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+.footer__infor__contenido__form__tittle {
+    margin-top: 0;
+}
+
+.footer__infor__contenido__form__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+}
+
+.footer__infor__contenido__form__formulario__input {
+    height: 56px;
+    margin-bottom: 20px;
+    border: none;
+    font-family: 'Raleway';
+    font-size: 18px;
+    padding: 10px;
+}
+
+.footer__infor__contenido__form__formulario__textarea {
+    margin-bottom: 20px;
+    border: none;
+    font-family: 'Raleway';
+    font-size: 18px;
+    resize: none;
+    padding: 10px;
+}
+
+.footer__infor__contenido__form__formulario__btn-Enviar {
+    width: 144px;
+    height: 51px;
+    background-color: #2A7AE4;
+    color: white;
+    border: none;
+}
+
+.footer__info__rodapie {
+    margin: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__info__rodapie > p {
+    margin-bottom: 0;
+}
