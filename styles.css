@@ -29,7 +29,7 @@ h1, p{
 .logo {
     display: flex;
     justify-content: space-between;
-    width: 601px;
+    width: 60%;
     height: 50px;
     align-items: center;
 }
@@ -38,7 +38,8 @@ h1, p{
     border: none;
     font-family: 'Raleway';
     font-weight: 400;
-    width: 393px;
+    width: 60%;
+    margin-left: 30px;
     padding: 5px 0;
 }
 
@@ -58,22 +59,22 @@ h1, p{
     height: 51px;
 }
 
-.banner {
-    position: relative;
-    display: inline-block;
-}
 
-.banner > img{
+.banner__container {
+    display: flex;
+    background: url(./assets/banner-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100vw;
+    height: 352px;
 }
 
 .banner__text__container {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    top: 150px;
-    left: 152px;
+    justify-content: flex-end;
+    margin: 0 0 2% 2%;
 }
 
 .banner__tittle {
@@ -192,6 +193,11 @@ h1, p{
     margin-top: 60px;
 }
 
+.footer__contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .logo__footer {
     display: flex;
@@ -199,6 +205,7 @@ h1, p{
     width: 190px;
     justify-content: space-between;
     align-items: center;
+    margin-right: 40px;
 }
 
 .footer__info__contenido {
@@ -210,7 +217,7 @@ h1, p{
 }
 
 .footer__info__contenido__list {
-    margin-top: 0;
+    margin: 0 40px;
     width: 200px;
     list-style: none;
 }
@@ -268,4 +275,107 @@ h1, p{
 
 .footer__info__rodapie > p {
     margin-bottom: 0;
+}
+
+/* Pestaña Login */
+
+.container__login, .container__nuevo-producto {
+    display: flex;
+    margin: 60px;
+    justify-content: center;
+}
+
+.container__iniciar-sesion, .container__nuevo-producto__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*width: 423px;*/
+}
+
+.container__iniciar-sesion__input {
+    width: 423px;
+    height: 63px;
+    margin: 20px 0;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 10px;
+    box-sizing: border-box;
+}
+    
+.container__iniciar-sesion__input::placeholder {
+    font-family: 'Raleway';
+    color: #A2A2A2;
+    font-size: 16px;
+}
+
+.container__iniciar-sesion__button {
+    width: 423px;
+    height: 63px;
+    color: white;
+    font-family: 'Raleway';
+    border: none;
+    background-color: #2A7AE4;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Pestaña administrador*/
+
+.container-products__line__header__ver-todo__button {
+    width: 163px;
+    height: 51px;
+    background-color: #2A7AE4;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.container-products__line__header__admin {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.container-products__line__header__ver-todo__admin {
+    margin: 0;
+}
+
+.container-products__line__header__admin > h3 {
+    font-size: 28px;
+    margin: 10px 0;
+    align-self: center;
+}
+
+/* Pestaña Agregar Producto */
+
+.container__nuevo-producto__form__input {
+    width: 559px;
+    height: 56px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container__nuevo-producto__form__textarea {
+    width: 559px;
+    height: 80px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.container__nuevo-producto__form__input::placeholder, .container__nuevo-producto__form__textarea::placeholder {
+    font-family: 'Raleway';
+    color: #A2A2A2;
+    font-size: 16px;
 }
