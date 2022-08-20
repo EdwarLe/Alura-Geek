@@ -26,7 +26,7 @@ h1, p{
     align-items: center;
 }
 
-.logo {
+.logo__and__search {
     display: flex;
     justify-content: space-between;
     width: 60%;
@@ -34,13 +34,33 @@ h1, p{
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__search {
+    position: relative;
+    width: 500px;
+}
+
+.logo__search__icon {
+    position: absolute;
+    display: block;
+    bottom: .35rem;
+    right: .5rem;
+    user-select: none;
+    cursor: none;
+    color: #A2A2A2;
+}
+
 .search {
     border: none;
     font-family: 'Raleway';
+    width: 480px;
     font-weight: 400;
-    width: 60%;
     margin-left: 30px;
-    padding: 5px 0;
+    padding: .5rem;
 }
 
 .search::placeholder {
@@ -66,7 +86,7 @@ h1, p{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
+    flex-shrink: 1;
     height: 352px;
 }
 
@@ -281,7 +301,7 @@ h1, p{
 
 .container__login, .container__nuevo-producto {
     display: flex;
-    margin: 60px;
+    margin: 60px 0;
     justify-content: center;
 }
 
@@ -378,4 +398,104 @@ h1, p{
     font-family: 'Raleway';
     color: #A2A2A2;
     font-size: 16px;
+}
+
+.footer__logo-lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+
+    .logo__search {
+        width: 250px;
+    }
+
+    .search {
+        width: 200px;
+    }
+
+    .container__nuevo-producto__form {
+        width: 606px;
+    }
+
+    .footer__logo-lista {
+        flex-direction: column;
+    }
+
+    .footer__info__contenido {
+        justify-content: center;
+    }
+
+    .footer__info__contenido__list {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .logo-texto {
+        width: 80px;
+    }
+
+    .logo > img{
+        width: 40px;
+    }
+
+    .logo-texto > img{
+        width: 50px;
+    }
+
+    .logo__and__search {
+        width: 150px;
+    }
+
+    .logo__search, .search {
+        width: 50px;
+        margin: 0;
+    }
+
+    .logo__search__icon {
+        right: 1rem;
+    }
+
+    .search::placeholder {
+        color: transparent;
+    }
+
+    .main__menu__header__btn-login {
+        width: 130px;
+    }
+
+    .main__menu__container, .container-products, .footer__info {
+        grid-template-columns: 4.5% 1fr 4.5%;
+    }
+
+    .footer__infor__contenido__form__formulario, .container__iniciar-sesion__input, .container__iniciar-sesion__button, .container__nuevo-producto__form__input, .container__nuevo-producto__form__textarea {
+        width: 300px;
+    }
+
+    .banner__text__container {
+        margin: 0 0 4.5% 4.5%;
+    }
+
+    .banner__tittle {
+        font-size: 32px;
+    }
+
+    .banner__text {
+        font-size: 18px;
+    }
+
+    .container-products__line__products__product > img {
+        width: 140px;
+    }
+
+    .container-products__line__products__product {
+        margin-bottom: 20px;
+    }
+
+    .logo__footer {
+        margin-right: 0;
+    }
 }

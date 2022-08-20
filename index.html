@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Alura Geek</title>
 </head>
 
@@ -16,16 +17,25 @@
         <header class="main__menu">
             <div class="main__menu__container">
                 <div class="main__menu__header">
-                    <div class="logo">
-                        <img src="./assets/Vector.png" alt="Logo Alura Geek">
-                        <div class="logo-texto">
-                            <img src="./assets/AluraGeek.png" alt="Texto Alura">
-                            <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                    <div class="logo__and__search">
+                        <div class="logo">
+                            <img src="./assets/Vector.png" alt="Logo Alura Geek">
+                            <div class="logo-texto">
+                                <img src="./assets/AluraGeek.png" alt="Texto Alura">
+                                <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                            </div>
                         </div>
-                        <input class="search" type="search" placeholder="¿Qué deseas buscar?">
+                        <div class="logo__search">
+                            <input class="search" type="search" placeholder="¿Qué deseas buscar?">
+                            <span class="logo__search__icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+
+                        </div>
                     </div>
                     <button class="main__menu__header__btn-login">Login</button>
                 </div>
+            </div>
             </div>
             <div class="banner">
                 <!--<img src="./assets/banner-image.png" alt="">-->
@@ -261,10 +271,10 @@
     <section class="footer">
         <div class="footer__info">
             <div class="footer__info__contenido">
-                <div class="footer__contenido">
+                <div class="footer__logo-lista">
                     <div class="logo__footer">
                         <img src="./assets/Vector.png" alt="Logo Alura Geek">
-                        <div class="logo-texto">
+                        <div class="logo-texto__footer">
                             <img src="./assets/AluraGeek.png" alt="Texto Alura">
                             <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
                         </div>
@@ -304,14 +314,23 @@
         <header class="main__menu">
             <div class="main__menu__container">
                 <div class="main__menu__header">
-                    <div class="logo">
-                        <img src="./assets/Vector.png" alt="Logo Alura Geek">
-                        <div class="logo-texto">
-                            <img src="./assets/AluraGeek.png" alt="Texto Alura">
-                            <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                    <div class="logo__and__search">
+                        <div class="logo">
+                            <img src="./assets/Vector.png" alt="Logo Alura Geek">
+                            <div class="logo-texto">
+                                <img src="./assets/AluraGeek.png" alt="Texto Alura">
+                                <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                            </div>
                         </div>
-                        <input class="search" type="search" placeholder="¿Qué deseas buscar?">
+                        <div class="logo__search">
+                            <input class="search" type="search" placeholder="¿Qué deseas buscar?">
+                            <span class="logo__search__icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+
+                        </div>
                     </div>
+                    <button class="main__menu__header__btn-login">Login</button>
                 </div>
             </div>
         </header>
@@ -334,21 +353,23 @@
     <section class="footer">
         <div class="footer__info">
             <div class="footer__info__contenido">
-                <div class="logo__footer">
-                    <img src="./assets/Vector.png" alt="Logo Alura Geek">
-                    <div class="logo-texto">
-                        <img src="./assets/AluraGeek.png" alt="Texto Alura">
-                        <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                <div class="footer__logo-lista">
+                    <div class="logo__footer">
+                        <img src="./assets/Vector.png" alt="Logo Alura Geek">
+                        <div class="logo-texto__footer">
+                            <img src="./assets/AluraGeek.png" alt="Texto Alura">
+                            <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                        </div>
                     </div>
+                    <ul class="footer__info__contenido__list">
+                        <li class="footer__info__contenido__list-ind">Quienes somos</li>
+                        <li class="footer__info__contenido__list-ind">Política de privacidad</li>
+                        <li class="footer__info__contenido__list-ind">Programa de fidelidad</li>
+                        <li class="footer__info__contenido__list-ind">Nuestras tiendas</li>
+                        <li class="footer__info__contenido__list-ind">Quiero ser franquiciado</li>
+                        <li class="footer__info__contenido__list-ind">Anúncie aquí</li>
+                    </ul>
                 </div>
-                <ul class="footer__info__contenido__list">
-                    <li class="footer__info__contenido__list-ind">Quienes somos</li>
-                    <li class="footer__info__contenido__list-ind">Política de privacidad</li>
-                    <li class="footer__info__contenido__list-ind">Programa de fidelidad</li>
-                    <li class="footer__info__contenido__list-ind">Nuestras tiendas</li>
-                    <li class="footer__info__contenido__list-ind">Quiero ser franquiciado</li>
-                    <li class="footer__info__contenido__list-ind">Anúncie aquí</li>
-                </ul>
                 <div class="footer__info__contenido__form">
                     <h3 class="footer__infor__contenido__form__tittle">Hable con nosotros</h3>
 
@@ -375,14 +396,23 @@
         <header class="main__menu">
             <div class="main__menu__container">
                 <div class="main__menu__header">
-                    <div class="logo">
-                        <img src="./assets/Vector.png" alt="Logo Alura Geek">
-                        <div class="logo-texto">
-                            <img src="./assets/AluraGeek.png" alt="Texto Alura">
-                            <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                    <div class="logo__and__search">
+                        <div class="logo">
+                            <img src="./assets/Vector.png" alt="Logo Alura Geek">
+                            <div class="logo-texto">
+                                <img src="./assets/AluraGeek.png" alt="Texto Alura">
+                                <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                            </div>
                         </div>
-                        <input class="search" type="search" placeholder="¿Qué deseas buscar?">
+                        <div class="logo__search">
+                            <input class="search" type="search" placeholder="¿Qué deseas buscar?">
+                            <span class="logo__search__icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+
+                        </div>
                     </div>
+                    <button class="main__menu__header__btn-login">Login</button>
                 </div>
             </div>
 
@@ -593,21 +623,23 @@
     <section class="footer">
         <div class="footer__info">
             <div class="footer__info__contenido">
-                <div class="logo__footer">
-                    <img src="./assets/Vector.png" alt="Logo Alura Geek">
-                    <div class="logo-texto">
-                        <img src="./assets/AluraGeek.png" alt="Texto Alura">
-                        <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                <div class="footer__logo-lista">
+                    <div class="logo__footer">
+                        <img src="./assets/Vector.png" alt="Logo Alura Geek">
+                        <div class="logo-texto__footer">
+                            <img src="./assets/AluraGeek.png" alt="Texto Alura">
+                            <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                        </div>
                     </div>
+                    <ul class="footer__info__contenido__list">
+                        <li class="footer__info__contenido__list-ind">Quienes somos</li>
+                        <li class="footer__info__contenido__list-ind">Política de privacidad</li>
+                        <li class="footer__info__contenido__list-ind">Programa de fidelidad</li>
+                        <li class="footer__info__contenido__list-ind">Nuestras tiendas</li>
+                        <li class="footer__info__contenido__list-ind">Quiero ser franquiciado</li>
+                        <li class="footer__info__contenido__list-ind">Anúncie aquí</li>
+                    </ul>
                 </div>
-                <ul class="footer__info__contenido__list">
-                    <li class="footer__info__contenido__list-ind">Quienes somos</li>
-                    <li class="footer__info__contenido__list-ind">Política de privacidad</li>
-                    <li class="footer__info__contenido__list-ind">Programa de fidelidad</li>
-                    <li class="footer__info__contenido__list-ind">Nuestras tiendas</li>
-                    <li class="footer__info__contenido__list-ind">Quiero ser franquiciado</li>
-                    <li class="footer__info__contenido__list-ind">Anúncie aquí</li>
-                </ul>
                 <div class="footer__info__contenido__form">
                     <h3 class="footer__infor__contenido__form__tittle">Hable con nosotros</h3>
 
@@ -634,15 +666,23 @@
         <header class="main__menu">
             <div class="main__menu__container">
                 <div class="main__menu__header">
-                    <div class="logo">
-                        <img src="./assets/Vector.png" alt="Logo Alura Geek">
-                        <div class="logo-texto">
-                            <img src="./assets/AluraGeek.png" alt="Texto Alura">
-                            <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                    <div class="logo__and__search">
+                        <div class="logo">
+                            <img src="./assets/Vector.png" alt="Logo Alura Geek">
+                            <div class="logo-texto">
+                                <img src="./assets/AluraGeek.png" alt="Texto Alura">
+                                <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                            </div>
                         </div>
-                        <input class="search" type="search" placeholder="¿Qué deseas buscar?">
+                        <div class="logo__search">
+                            <input class="search" type="search" placeholder="¿Qué deseas buscar?">
+                            <span class="logo__search__icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+
+                        </div>
                     </div>
-                    <button class="main__menu__header__btn-login">Menú Administrador</button>
+                    <button class="main__menu__header__btn-login">Login</button>
                 </div>
             </div>
         </header>
@@ -669,21 +709,23 @@
     <section class="footer">
         <div class="footer__info">
             <div class="footer__info__contenido">
-                <div class="logo__footer">
-                    <img src="./assets/Vector.png" alt="Logo Alura Geek">
-                    <div class="logo-texto">
-                        <img src="./assets/AluraGeek.png" alt="Texto Alura">
-                        <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                <div class="footer__logo-lista">
+                    <div class="logo__footer">
+                        <img src="./assets/Vector.png" alt="Logo Alura Geek">
+                        <div class="logo-texto__footer">
+                            <img src="./assets/AluraGeek.png" alt="Texto Alura">
+                            <img src="./assets/AluraGeek (1).png" alt="Texto Geek">
+                        </div>
                     </div>
+                    <ul class="footer__info__contenido__list">
+                        <li class="footer__info__contenido__list-ind">Quienes somos</li>
+                        <li class="footer__info__contenido__list-ind">Política de privacidad</li>
+                        <li class="footer__info__contenido__list-ind">Programa de fidelidad</li>
+                        <li class="footer__info__contenido__list-ind">Nuestras tiendas</li>
+                        <li class="footer__info__contenido__list-ind">Quiero ser franquiciado</li>
+                        <li class="footer__info__contenido__list-ind">Anúncie aquí</li>
+                    </ul>
                 </div>
-                <ul class="footer__info__contenido__list">
-                    <li class="footer__info__contenido__list-ind">Quienes somos</li>
-                    <li class="footer__info__contenido__list-ind">Política de privacidad</li>
-                    <li class="footer__info__contenido__list-ind">Programa de fidelidad</li>
-                    <li class="footer__info__contenido__list-ind">Nuestras tiendas</li>
-                    <li class="footer__info__contenido__list-ind">Quiero ser franquiciado</li>
-                    <li class="footer__info__contenido__list-ind">Anúncie aquí</li>
-                </ul>
                 <div class="footer__info__contenido__form">
                     <h3 class="footer__infor__contenido__form__tittle">Hable con nosotros</h3>
 
