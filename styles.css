@@ -465,6 +465,10 @@ h1, p{
     color: red;
 }
 
+.invisible {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     .logo__search {
