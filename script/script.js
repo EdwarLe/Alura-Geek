@@ -6,6 +6,7 @@ let paginaAgregarProductos = document.getElementById("pagina__agregar__productos
 let btnLogin = document.getElementById("btn__login");
 let btnVolver = document.getElementById("btn__Volver");
 let btnConsolas = document.getElementById("btn__consolas");
+let msgErrorLogin = document.getElementById("mensaje__error__login");
 
 paginaLogin.style.display = "none";
 paginaAdministrador.style.display = "none";
@@ -13,19 +14,35 @@ paginaAgregarProductos.style.display = "none";
 
 // Aquí empieza a gestionarse el cambio de páginas
 
-function pritnBtnLogin () {
+function pritnBtnLogin() {
     paginaPrincipal.style.display = "none";
     paginaLogin.style.display = "block";
 };
 
-function printBtnVolver () {
+function printBtnVolver() {
     paginaLogin.style.display = "none";
     paginaPrincipal.style.display = "block";
 };
 
-function irSeccionConsolas () {
-    window.location.href = ("#consolas");
+function printAdmin() {
+    paginaPrincipal.style.display = "none";
+    paginaAdministrador.style.display = "block";
 }
+
+function irSeccionConsolas() {
+    window.location.href = ("#consolas");
+};
+
+function ingresarAdmin() {
+    
+    if (usario == user.value && contrasenha == password.value) {
+        paginaLogin.style.display = "none";
+        printAdmin();
+    } else {
+        msgErrorLogin.style.display = "block";
+
+    }
+};
 
 btnLogin.addEventListener("click", pritnBtnLogin);
 btnVolver.addEventListener("click", printBtnVolver);

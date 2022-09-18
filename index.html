@@ -31,7 +31,7 @@
                                 </div>
                             </div>
                             <div class="logo__search">
-                                <input class="search" type="search" placeholder="¿Qué deseas buscar?">
+                                <input class="search" type="search" placeholder="¿Qué deseas buscar?" id="filtrar__search">
                                 <span class="logo__search__icon">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </span>
@@ -366,13 +366,19 @@
             <form class="container__iniciar-sesion">
                 <h2>Iniciar Sesión</h2>
                 <input type="email" name="email" class="container__iniciar-sesion__input"
-                    placeholder="Escriba su correo" required>
-                <input type="password" name="pasword" class="container__iniciar-sesion__input"
+                    placeholder="Escriba su correo" required id="user">
+                <div class="container__pass__ver">
+                    <input type="password" name="pasword" class="container__iniciar-sesion__input"
                     placeholder="Escriba su contraseña" required
                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
-                    title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contene caracteres especiales">
-                <button class="container__iniciar-sesion__button">Entrar</button>
+                    title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales" id="password">
+                    <span class="logo__ver__password">
+                        <i class="fa-sharp fa-solid fa-eye" id="show__password"></i>
+                    </span>
+                </div>
+                <button class="container__iniciar-sesion__button" id="entrar">Entrar</button>
             </form>
+            <h2 class="mensaje__error__ingreso" id="mensaje__error__login">Usuario o Contraseña incorrecto</h2>
 
         </section>
 
@@ -440,7 +446,7 @@
 
                             </div>
                         </div>
-                        <button class="main__menu__header__btn-login">Login</button>
+                        <!--<button class="main__menu__header__btn-login">Login</button> -->
                     </div>
                 </div>
 
@@ -778,6 +784,8 @@
     </section>
     <script src="./script/validacion.js"></script>
     <script src="./script/script.js"></script>
+    <script src="./script/password.js"></script>
+    <script src="./script/search.js"></script>
 </body>
 
 </html>
